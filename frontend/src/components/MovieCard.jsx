@@ -40,7 +40,7 @@ function MovieCard({
 
     console.log(movie_id, movie_title, movie_release, movie_poster_path);
 
-    fetch(`${BASE_URL}/favorites`, {
+    fetch(`${BASE_URL}/movies/favorites`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

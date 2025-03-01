@@ -31,7 +31,7 @@ export const Favorites = () => {
       try {
         setLoading(true);
         const response = await fetch(
-          `${BASE_URL}/favorites?user_ip=${userInfo.user_ip}`
+          `${BASE_URL}/movies/favorites?user_ip=${userInfo.user_ip}`
         );
         const data = await response.json();
         setMovies(data.data);
